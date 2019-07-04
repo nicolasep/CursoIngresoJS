@@ -5,5 +5,8 @@
 function mostrar()
 {
 
+var	nombre=prompt("ingrese nombre");
+
+
 }
 
