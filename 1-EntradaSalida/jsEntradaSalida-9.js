@@ -7,10 +7,11 @@ function mostrarAumento()
 
     numero1=document.getElementById("sueldo").value;
 
-   var num1=parseInt(numero1);
+   numero1=parseInt(numero1);
    
-   var num2=(num1*1.1);
-   document.getElementById("resultado").value=num2;
+   //var numero2=(numero1*1.1);
+   var numero2=(numero1+(numero1*10)/100);
+   document.getElementById("resultado").value=numero2;
     
 
 }
