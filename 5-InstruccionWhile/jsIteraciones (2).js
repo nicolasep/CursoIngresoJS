@@ -1,9 +1,12 @@
 function mostrar()
 {	
 var numero=10;
-while (numero >=1) {
-	console.log("numero "+ numero);
-	numero=numero-1;
+numero=parseInt(numero);
+	while (numero >=1) {
+		alert(numero);
+		
+		numero=numero-1;
+
 }
 
 }//FIN DE LA FUNCIÓN
