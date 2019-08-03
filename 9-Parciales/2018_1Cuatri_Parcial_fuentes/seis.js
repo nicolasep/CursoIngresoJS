@@ -1,7 +1,8 @@
 function mostrar()
 {
-var hora=document.getElementById("laHora").value;
-hora=parseInt(hora);
+
+    var hora=document.getElementById("laHora").value;
+//hora=parseInt(hora);
 var resultado;
 switch(hora){
     case "6":
@@ -34,8 +35,9 @@ switch(hora){
     case "5":
         resultado="es de noche";
         if(hora>=20&&hora<=24){
-           resultado+="a dormir";
+           resultado+=" a dormir";
         }
+    break;
     
     default:
     resultado="la hora no es valida";
@@ -44,6 +46,16 @@ switch(hora){
 }
 
  alert(resultado);
+
+//var contador;
+
+/*var contador;
+for (contador=0;contador <5;contador++)
+{
+    
+    console.info("in" , contador);
+}
+console.info("out", contador);*/
 }
 
 /*

@@ -18,26 +18,73 @@ alumno5=parseInt(alumno5);
 var salumno5=prompt("ingrese sexo de quinto alumno 'f' o 'm' ");
 var promedio=alumno1+alumno2+alumno3+alumno4;
 */
-
+/*
 var contador=0;
-var nota=prompt("ingrese nota");
-nota=parseInt(nota);
 
-var sexo=prompt("ingrese f o m");
 
     while(contador<=5)
     {
-        while(isNaN(nota)==true|| acumulador<0||acumulador>5)
-        {
-            
+        var nota=prompt("ingrese nota");
+            nota=parseInt(nota);
+        while(contador<5){
+
+            var sexo=prompt("ingrese f o m");
+
         }
+        
 
+        while(nota>=6 && nota<=10){
+
+        }
     }
+*/
 
+var contador=0;
+var nota;
+var sexo;
+var sexoNotaBaja;
+var notaBaja;
+var promedio;
+var contadorVarones=0;
+var acumulador=0;
 
-
-
-
+	while(contador<5){
+        nota=prompt("ingrese nota");
+        //nota=parseInt(nota);
+			
+            while(isNaN(nota)==true || nota>10 || nota<1)
+            {
+                nota=prompt("Numero incorrecto ,ingrese nota en 1 y 10");
+                
+            }
+        nota=parseInt(nota);
+        sexo=prompt("ingrese sexo f o m");
+            
+            while(sexo!="m" && sexo!="f")
+            {
+                sexo=prompt("no existe, ingrese sexo f o m");
+            }
+			
+            if(nota<notaBaja)
+            {
+				notaBaja=nota;
+   				sexoNotaBaja=sexo;
+				
+            }
+            if(nota>=6 && sexo=="m")
+            {
+                contadorVarones++;
+            }
+       
+		acumulador=acumulador+nota;
+		notaBaja=nota;
+        contador++;
+	}
+    promedio=acumulador/5;
+    alert("el promedio de las notas es "+promedio);
+    alert("la nota mas baja es " + notaBaja + " y el sexo es " + sexoNotaBaja);
+    alert("la cantidad de varones con nota mayor o igual a 6 son "+contadorVarones);
+     
 
 
 }
