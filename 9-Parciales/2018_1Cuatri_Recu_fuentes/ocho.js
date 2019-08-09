@@ -12,13 +12,16 @@ var numeroMaximo;
 var letraNumeroMaxmo;
 var numeroMinimo;
 var letraNumeroMinimo;
+var verificaLetra;
 
 do
 {
     letra=prompt("Ingrese una letra");
-    while(isNaN(letra)==false)
+    verificaLetra=letra.charAt(0)
+    while(isNaN(letra)==false || verificaLetra!=letra)
     {
         letra=prompt("Letra invalida, ingrese una letra");
+        verificaLetra=letra.charAt(0)
     }
 
     numero=prompt("Ingrese un numero entre -100 y 100");

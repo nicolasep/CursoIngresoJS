@@ -28,6 +28,7 @@ switch (planeta){
         break;
     
 }
+alert(resultado);
 */
 
  //solo con if

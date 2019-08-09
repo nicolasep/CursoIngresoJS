@@ -1,43 +1,7 @@
 function mostrar()
 {
-    /*
-var alumno1=prompt("ingrese nota de primer alumno");
-alumno1=parseInt(alumno1);
-var salumno1=prompt("ingrese sexo de primer alumno 'f' o 'm' ");
-var alumno2=prompt("ingrese nota de segundo alumno");
-alumno2=parseInt(alumno2);
-var salumno2=prompt("ingrese sexo de segundo alumno 'f' o 'm' ");
-var alumno3=prompt("ingrese nota de tercer alumno");
-alumno3=parseInt(alumno3);
-var salumno3=prompt("ingrese sexo de tercer alumno 'f' o 'm' ");
-var alumno4=prompt("ingrese nota de cuarto alumno");
-alumno4=parseInt(alumno4);
-var salumno4=prompt("ingrese sexo de cuarto alumno 'f' o 'm' ");
-var alumno5=prompt("ingrese nota de quinto alumno");
-alumno5=parseInt(alumno5);
-var salumno5=prompt("ingrese sexo de quinto alumno 'f' o 'm' ");
-var promedio=alumno1+alumno2+alumno3+alumno4;
-*/
-/*
-var contador=0;
+   
 
-
-    while(contador<=5)
-    {
-        var nota=prompt("ingrese nota");
-            nota=parseInt(nota);
-        while(contador<5){
-
-            var sexo=prompt("ingrese f o m");
-
-        }
-        
-
-        while(nota>=6 && nota<=10){
-
-        }
-    }
-*/
 
 var contador=0;
 var nota;
@@ -50,7 +14,7 @@ var acumulador=0;
 
 	while(contador<5){
         nota=prompt("ingrese nota");
-        //nota=parseInt(nota);
+        nota=parseInt(nota);
 			
             while(isNaN(nota)==true || nota>10 || nota<1)
             {
